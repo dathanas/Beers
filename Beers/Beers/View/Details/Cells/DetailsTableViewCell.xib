@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="detailsCell" rowHeight="390" id="KGk-i7-Jjw" customClass="DetailsTableViewCell" customModule="Beers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="522" height="390"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="522" height="390"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="First brewed" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CqD-oJ-kvL">
+                        <rect key="frame" x="8" y="32" width="102" height="49.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABV" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gh0-vh-PIN">
+                        <rect key="frame" x="218" y="32" width="35.5" height="49.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWY-wY-PvA">
+                        <rect key="frame" x="8" y="142.5" width="506" height="108"/>
+                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </string>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aye-GW-FnJ">
+                        <rect key="frame" x="8" y="295.5" width="506" height="86.5"/>
+                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </string>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Pairing Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yz-V9-u5A">
+                        <rect key="frame" x="8" y="113.5" width="506" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brewers Tips Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCP-hy-S7M">
+                        <rect key="frame" x="8" y="266.5" width="506" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmX-Xi-VP8">
+                        <rect key="frame" x="118" y="32" width="68" height="49.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ni-UM-QDk" customClass="UIColorfulBeerDensityView" customModule="Beers" customModuleProvider="target">
+                        <rect key="frame" x="253.5" y="8" width="106.5" height="89.5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="tCP-hy-S7M" secondAttribute="trailing" constant="8" id="2XA-Cw-jwi"/>
+                    <constraint firstItem="BWY-wY-PvA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="2jz-jj-ZX7"/>
+                    <constraint firstItem="tCP-hy-S7M" firstAttribute="top" secondItem="BWY-wY-PvA" secondAttribute="bottom" constant="16" id="5N0-AL-CvQ"/>
+                    <constraint firstItem="aye-GW-FnJ" firstAttribute="height" secondItem="BWY-wY-PvA" secondAttribute="height" multiplier="0.8" id="5Zg-JF-23G"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0ni-UM-QDk" secondAttribute="trailing" constant="16" id="8V2-7d-Pln"/>
+                    <constraint firstAttribute="trailing" secondItem="aye-GW-FnJ" secondAttribute="trailing" constant="8" id="8VQ-HU-MAG"/>
+                    <constraint firstAttribute="bottom" secondItem="aye-GW-FnJ" secondAttribute="bottom" constant="8" id="AgC-Yu-I9u"/>
+                    <constraint firstItem="0ni-UM-QDk" firstAttribute="leading" secondItem="gh0-vh-PIN" secondAttribute="trailing" id="Arx-gj-aQ1"/>
+                    <constraint firstItem="aye-GW-FnJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="DQa-lQ-vWR"/>
+                    <constraint firstItem="0ni-UM-QDk" firstAttribute="width" secondItem="gh0-vh-PIN" secondAttribute="width" multiplier="3" id="Gfw-ni-l0w"/>
+                    <constraint firstItem="9Yz-V9-u5A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="JQO-OF-G7w"/>
+                    <constraint firstItem="aye-GW-FnJ" firstAttribute="top" secondItem="tCP-hy-S7M" secondAttribute="bottom" constant="8" id="KmU-yR-BWW"/>
+                    <constraint firstItem="nmX-Xi-VP8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="32" id="NcH-qs-psR"/>
+                    <constraint firstItem="tCP-hy-S7M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Sqn-Dy-tk7"/>
+                    <constraint firstItem="gh0-vh-PIN" firstAttribute="leading" secondItem="nmX-Xi-VP8" secondAttribute="trailing" constant="32" id="ThQ-St-3QY"/>
+                    <constraint firstItem="9Yz-V9-u5A" firstAttribute="top" secondItem="nmX-Xi-VP8" secondAttribute="bottom" constant="32" id="aE5-20-SA3"/>
+                    <constraint firstAttribute="trailing" secondItem="BWY-wY-PvA" secondAttribute="trailing" constant="8" id="cXO-k3-2H2"/>
+                    <constraint firstItem="CqD-oJ-kvL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="dA3-PZ-xDA"/>
+                    <constraint firstItem="9Yz-V9-u5A" firstAttribute="top" secondItem="0ni-UM-QDk" secondAttribute="bottom" constant="16" id="edp-tj-wV5"/>
+                    <constraint firstItem="CqD-oJ-kvL" firstAttribute="width" secondItem="nmX-Xi-VP8" secondAttribute="width" multiplier="1.5" id="elI-Fj-DI5"/>
+                    <constraint firstItem="nmX-Xi-VP8" firstAttribute="leading" secondItem="CqD-oJ-kvL" secondAttribute="trailing" constant="8" id="fGg-uK-bGN"/>
+                    <constraint firstItem="9Yz-V9-u5A" firstAttribute="top" secondItem="CqD-oJ-kvL" secondAttribute="bottom" constant="32" id="hRv-Nn-knF"/>
+                    <constraint firstItem="9Yz-V9-u5A" firstAttribute="top" secondItem="gh0-vh-PIN" secondAttribute="bottom" constant="32" id="jbV-CB-ai8"/>
+                    <constraint firstItem="CqD-oJ-kvL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="32" id="k6d-dY-bac"/>
+                    <constraint firstItem="gh0-vh-PIN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="32" id="mEp-g1-kEK"/>
+                    <constraint firstItem="0ni-UM-QDk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="pZ1-38-FLJ"/>
+                    <constraint firstAttribute="trailing" secondItem="9Yz-V9-u5A" secondAttribute="trailing" constant="8" id="rX9-C4-6gK"/>
+                    <constraint firstItem="BWY-wY-PvA" firstAttribute="top" secondItem="9Yz-V9-u5A" secondAttribute="bottom" constant="8" id="rXW-G0-ogp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="abvTitleLabel" destination="gh0-vh-PIN" id="0dG-hz-9oN"/>
+                <outlet property="brewersTipsLabel" destination="aye-GW-FnJ" id="khB-ap-xbh"/>
+                <outlet property="brewersTipsTitle" destination="tCP-hy-S7M" id="KuW-w5-ufo"/>
+                <outlet property="densityView" destination="0ni-UM-QDk" id="caE-Tt-DeQ"/>
+                <outlet property="firstBrewedLabel" destination="nmX-Xi-VP8" id="1Me-D8-lrO"/>
+                <outlet property="firstBrewedTitleLabel" destination="CqD-oJ-kvL" id="Emx-GN-VwN"/>
+                <outlet property="foodPairingLabel" destination="BWY-wY-PvA" id="hMw-zP-Jec"/>
+                <outlet property="foodPairingTitle" destination="9Yz-V9-u5A" id="SFK-co-0W7"/>
+            </connections>
+            <point key="canvasLocation" x="162.31884057971016" y="199.55357142857142"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="0ni-UM-QDk">
+            <size key="intrinsicContentSize" width="96" height="96"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

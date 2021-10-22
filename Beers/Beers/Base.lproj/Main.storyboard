@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Rz-CV-Ufp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ZxB-wT-saY">
+            <objects>
+                <navigationController id="8Rz-CV-Ufp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UnF-6y-zO0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Z18-Ul-snl" kind="relationship" relationship="rootViewController" id="Mvt-sW-Nji"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wW3-GL-V94" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1107" y="157"/>
+        </scene>
+        <!--Beers-->
+        <scene sceneID="TPY-bI-bsp">
+            <objects>
+                <collectionViewController id="Z18-Ul-snl" customClass="BeersCollectionViewController" customModule="Beers" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="bFR-dI-Emq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="evc-2M-sce">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="Z18-Ul-snl" id="aT4-9O-yEF"/>
+                            <outlet property="delegate" destination="Z18-Ul-snl" id="sBn-XO-eAA"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Beers" id="rbu-7g-a9m">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="CAe-mo-GY3">
+                            <connections>
+                                <segue destination="fYL-uS-TJF" kind="show" id="NAQ-Z4-hVt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="Ut0-mf-xJ9" kind="show" identifier="showBeerDetails" id="yn0-YE-hFS"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DJR-4d-VDQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-338" y="158"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="Ry0-Mg-0kb">
+            <objects>
+                <tableViewController id="Ut0-mf-xJ9" customClass="DetailsTableViewController" customModule="Beers" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="d4W-4a-sXt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Ut0-mf-xJ9" id="4lb-FA-bGn"/>
+                            <outlet property="delegate" destination="Ut0-mf-xJ9" id="FSL-de-hEb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Title" id="3kV-OK-99j"/>
+                    <connections>
+                        <outlet property="beerTitleNavItem" destination="3kV-OK-99j" id="RNT-7b-26q"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kYp-Fr-R8h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="438" y="527"/>
+        </scene>
+        <!--Temp Amsler View Controller-->
+        <scene sceneID="usw-0H-ntI">
+            <objects>
+                <viewController id="fYL-uS-TJF" customClass="TempAmslerViewController" customModule="Beers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="URb-BD-4QI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZnP-G1-2Nb" customClass="UIAmslerGridView" customModule="Beers" customModuleProvider="target">
+                                <rect key="frame" x="16" y="104" width="382" height="742"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="P6O-EV-6CC" appends="YES" id="etG-ua-1cx"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pLc-91-lMr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pLc-91-lMr" firstAttribute="bottom" secondItem="ZnP-G1-2Nb" secondAttribute="bottom" constant="16" id="QF9-aI-LET"/>
+                            <constraint firstItem="ZnP-G1-2Nb" firstAttribute="top" secondItem="pLc-91-lMr" secondAttribute="top" constant="16" id="RTr-wm-KoW"/>
+                            <constraint firstItem="pLc-91-lMr" firstAttribute="trailing" secondItem="ZnP-G1-2Nb" secondAttribute="trailing" constant="16" id="fRo-CG-6ez"/>
+                            <constraint firstItem="ZnP-G1-2Nb" firstAttribute="leading" secondItem="pLc-91-lMr" secondAttribute="leading" constant="16" id="nI3-Mf-zyt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="j4i-CJ-sH0"/>
+                    <connections>
+                        <outlet property="amslerView" destination="ZnP-G1-2Nb" id="JBQ-dh-goR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BXC-XW-mNP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="P6O-EV-6CC">
+                    <connections>
+                        <action selector="tapGesture:" destination="fYL-uS-TJF" id="XQS-d5-Ref"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="438" y="-139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
